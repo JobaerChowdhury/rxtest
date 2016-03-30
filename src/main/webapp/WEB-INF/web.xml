@@ -4,4 +4,15 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>demoMetadataService</servlet-name>
+    <servlet-class>com.cefalo.rxtest.demo.servlet.DemoMetadataService</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>demoMetadataService</servlet-name>
+    <url-pattern>/metadata/*</url-pattern>
+  </servlet-mapping>
+
 </web-app>
