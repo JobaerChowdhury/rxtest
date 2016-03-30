@@ -8,6 +8,8 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
+import static java.util.stream.Collectors.toList;
+
 public class Example1 {
     public static void main(String[] args) throws InterruptedException {
         basicFlatMap();
@@ -61,10 +63,9 @@ public class Example1 {
         });
     }
 
-
     private static void collectionAndRx() {
         List<Integer> integers = Arrays.asList(2, 1, 3, 4, 5, 6, 7, 8);
-        List<Integer> filtered = integers.stream().filter(i -> i % 2 == 0).collect(Collectors.toList());
+        List<Integer> filtered = integers.stream().filter(i -> i % 2 == 0).collect(toList());
         System.out.println(integers);
         System.out.println(filtered);
 
