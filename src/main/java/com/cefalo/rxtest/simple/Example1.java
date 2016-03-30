@@ -59,8 +59,6 @@ public class Example1 {
         fixed.subscribe(l -> {
             System.out.println("Fixed " + l);
         });
-
-        Thread.sleep(10 * 1000);
     }
 
 
